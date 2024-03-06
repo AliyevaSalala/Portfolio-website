@@ -1,0 +1,146 @@
+footer {
+  background-color: #272727;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 2rem 0;
+  .footer {
+    .footer-top {
+      padding: 2rem 0;
+      @include flexbox();
+      border-bottom: 1px solid gray;
+      h1 {
+        color: $white-color;
+        font-size: 50px;
+        font-weight: 400;
+      }
+      button {
+        @extend %primary-btn;
+        i {
+          margin-left: 5px;
+          font-size: 15px;
+          transform: rotate(40deg);
+        }
+      }
+    }
+    .footer-bottom {
+      padding: 50px 0;
+      display: flex;
+
+      border-bottom: 1px solid gray;
+      .logo {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 40%;
+        a {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          color: $white-color;
+          font-size: 25px;
+          font-weight: bold;
+          img {
+            width: 50px;
+          }
+        }
+        p {
+          max-width: 500px;
+          color: #fcfcfd;
+        }
+        .icons {
+          display: flex;
+          gap: 10px;
+          i {
+            font-size: 20px;
+            color: $white-color;
+            cursor: pointer;
+          }
+        }
+      }
+      .navigation {
+        padding-left: 40px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h3 {
+          color: $orange-color;
+        }
+        nav {
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            li {
+              a {
+                color: #fcfcfd;
+              }
+            }
+          }
+        }
+      }
+      .contact {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h3 {
+          color: $orange-color;
+        }
+        nav {
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            li {
+              a {
+                color: #fcfcfd;
+              }
+            }
+          }
+        }
+      }
+      .information {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h3 {
+          color: $orange-color;
+        }
+        .input {
+          position: relative;
+          input {
+            padding: 10px 15px;
+            width: 250px;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            &::placeholder {
+              color: #272727;
+            }
+          }
+          i {
+            position: absolute;
+            top: 0;
+            background-color: $orange-color;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            color: #fff;
+            padding: 8px 20px;
+            right: -10px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .footer-texts {
+      padding-top: 30px;
+      @include flexbox();
+      p {
+        font-size: 15px;
+        color: #fcfcfd;
+      }
+    }
+  }
+}

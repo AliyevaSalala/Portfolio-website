@@ -1,0 +1,36 @@
+#services {
+  background-image: url("../images/Frame\ 65.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 260px;
+  border-radius: 30px;
+  background-color: black;
+  padding: 50px 0;
+  border-radius: 30px;
+
+  .services-sec {
+    display: flex;
+    flex-direction: column;
+
+    .services-top {
+      @include flexbox();
+      h1 {
+        font-size: 40px;
+        //   color: $white-color;
+        span {
+          color: $orange-color;
+        }
+      }
+      p {
+        max-width: 500px;
+        font-size: 15px;
+        line-height: 20px;
+        //   color: $white-color;
+      }
+    }
+    .services-bottom {
+      padding-top: 50px;
+    }
+  }
+}

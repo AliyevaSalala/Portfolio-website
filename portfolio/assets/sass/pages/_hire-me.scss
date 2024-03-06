@@ -1,0 +1,58 @@
+#hire-me-sec {
+  background-color: #f2f4f7;
+  padding: 2rem 0;
+
+  .hire-me-sec {
+    display: flex;
+    align-items: center;
+    .sec-right {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .sec-left {
+      padding-left: 50px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      h1 {
+        font-size: 45px;
+        color: $blue-color;
+        span {
+          color: $orange-color;
+        }
+      }
+      p {
+        max-width: 400px;
+        color: #98a2b3;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+      }
+      .boxes {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        .box {
+          h1 {
+            color: #1d2939;
+            font-size: 40px;
+          }
+          p {
+            color: #667085;
+          }
+        }
+      }
+      button {
+        @extend %primary-btn;
+        width: 200px;
+        border: 1px solid #000;
+        background-color: transparent;
+        color: #000;
+      }
+    }
+  }
+}

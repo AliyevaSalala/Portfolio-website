@@ -1,0 +1,104 @@
+#portfolio-sec {
+  padding: 3rem 0;
+  .portfolio-sec {
+    .info {
+      @include flexbox();
+      padding: 30px 0;
+      h1 {
+        font-size: 45px;
+        color: $blue-color;
+        max-width: 400px;
+        span {
+          color: $orange-color;
+        }
+      }
+      button {
+        @extend %primary-btn;
+        padding: 10px 25px;
+      }
+    }
+    .intro {
+      display: flex;
+      flex-direction: column;
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        .card {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .bg-btn {
+        padding-top: 30px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        .bg-color {
+          &::before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: #e4e7ec;
+            cursor: pointer;
+          }
+          &.orange-color {
+            &::before {
+              content: "";
+              display: block;
+              width: 40px;
+              height: 20px;
+              border-radius: 20px;
+              background-color: $orange-color;
+            }
+          }
+        }
+      }
+      .portfolio-btn {
+        padding-top: 30px;
+        @include flexbox(center);
+        gap: 30px;
+        button {
+          @extend %primary-btn;
+          background-color: #f2f4f7;
+          color: #000;
+        }
+      }
+      .portfolio-texts {
+        padding-top: 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .lirante {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          h1 {
+            font-size: 45px;
+            color: $blue-color;
+          }
+          i {
+            padding: 17px 20px;
+            background-color: $orange-color;
+            color: $white-color;
+            border-radius: 50%;
+            transform: rotate(40deg);
+            cursor: pointer;
+            font-size: 20px;
+          }
+        }
+        p {
+          max-width: 700px;
+          line-height: 20px;
+          color: #344054;
+        }
+      }
+    }
+  }
+}

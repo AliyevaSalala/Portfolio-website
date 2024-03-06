@@ -1,0 +1,44 @@
+{
+  "blog": [
+    {
+      "id": "1",
+      "image": "./assets/images/Frame 60 (1).svg",
+      "title": "UI/UX Design",
+      "name": "Jayesh Patil",
+      "day": "10 Nov, 2023",
+      "desc": "Design Unraveled: Behind the Scenes of UI/UX Magic"
+    },
+    {
+      "id": "2",
+      "image": "./assets/images/Rectangle 6.svg",
+      "title": "App Design",
+      "name": "Jayesh Patil",
+      "day": "9 Oct, 2023",
+      "desc": "Design Unraveled: Behind the Scenes of UI/UX Magic"
+    },
+    {
+      "id": "3",
+      "image": "./assets/images/Rectangle 6 (1).svg",
+      "title": "APP Design",
+      "name": "Jayesh Patil",
+      "day": "9 Oct, 2023",
+      "desc": "Design Unraveled: Behind the Scenes of UI/UX Magic"
+    },
+    {
+      "id": "4",
+      "image": "./assets/images/Frame 60 (1).svg",
+      "title": "UI/UX Design",
+      "name": "Jayesh Patil",
+      "day": " 10 Nov, 2023",
+      "desc": "Design Unraveled: Behind the Scenes of UI/UX Magic"
+    },
+    {
+      "id": "5",
+      "image": "./assets/images/Rectangle 6 (1).svg",
+      "title": "APP Design",
+      "name": "Jayesh Patil",
+      "day": " 10 Nov, 2023",
+      "desc": "Design Unraveled: Behind the Scenes of UI/UX Magic"
+    }
+  ]
+}

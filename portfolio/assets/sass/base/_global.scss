@@ -1,0 +1,12 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1199px) {
+    padding: 0 5%;
+  }
+}
+
+// html {
+//   scroll-behavior: smooth;
+// }

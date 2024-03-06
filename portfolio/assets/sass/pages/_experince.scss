@@ -1,0 +1,61 @@
+#experince-sec {
+  padding: 2rem 0;
+  .experince-sec {
+    h1 {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 45px;
+      color: $blue-color;
+      font-weight: 400;
+      span {
+        color: $orange-color;
+      }
+    }
+    .intro {
+      padding-top: 30px;
+      @include flexbox();
+      .texts {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .text {
+          padding-left: 60px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h3 {
+            font-size: 20px;
+            color: $blue-color;
+          }
+          p {
+            font-size: 15px;
+            font-weight: 400;
+            color: #98a2b3;
+          }
+        }
+        .text-2 {
+          padding-right: 50px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h3 {
+            font-size: 20px;
+            color: $blue-color;
+          }
+          p {
+            font-size: 15px;
+            font-weight: 400;
+            color: #98a2b3;
+            max-width: 300px;
+            line-height: 20px;
+          }
+        }
+      }
+      .image {
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+}

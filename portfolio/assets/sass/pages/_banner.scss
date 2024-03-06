@@ -1,0 +1,119 @@
+#hero-banner-sec {
+  padding: 3rem 0;
+  .hero-banner-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .vector-svg {
+      button {
+        padding: 10px 25px;
+        border: 1px solid #000;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: transparent;
+      }
+      img {
+        top: -20px;
+      }
+    }
+    .heading {
+      position: relative;
+      h1 {
+        padding-top: 20px;
+        font-size: 70px;
+        text-align: center;
+        font-weight: 500;
+        span {
+          color: $orange-color;
+        }
+      }
+      img {
+        width: 60px;
+        position: absolute;
+        left: -50px;
+        // top: -10px;
+        bottom: -30px;
+        transform: rotate(180deg);
+      }
+    }
+
+    .banner-intro {
+      position: relative;
+      @include flexbox();
+      gap: 200px;
+      .info {
+        padding-right: 300px;
+        img {
+          width: 50px;
+        }
+        h4 {
+          //   max-width: 300px;
+          padding-top: 15px;
+          color: $blue-color;
+          font-size: 17px;
+          line-height: 20px;
+        }
+      }
+
+      .banner-img {
+        img {
+          width: 800px;
+          position: absolute;
+          top: -80px;
+          left: 150px;
+        }
+        .portfolio-btn {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 6px 30px 6px 10px;
+          position: absolute;
+          bottom: -300px;
+          left: 420px;
+          backdrop-filter: blur(10px);
+          border: 1px solid #fff;
+          border-radius: 30px;
+
+          button {
+            @extend %primary-btn;
+            i {
+              margin-left: 5px;
+              font-size: 15px;
+              transform: rotate(40deg);
+            }
+          }
+          p {
+            color: $white-color;
+            font-size: 15px;
+            font-weight: 400;
+          }
+        }
+      }
+      .texts {
+        .icons {
+          display: flex;
+          gap: 3px;
+          padding-bottom: 15px;
+          i {
+            color: $orange-color;
+            cursor: pointer;
+            font-size: 20px;
+          }
+        }
+        h3 {
+          font-size: 35px;
+          color: $bg-color;
+          //   text-align: center;
+        }
+        p {
+          text-align: end;
+          color: $bg-color;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

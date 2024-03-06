@@ -1,0 +1,65 @@
+#project-sec {
+  padding: 3rem 0;
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      color: $blue-color;
+      //   font-weight: 400;
+      max-width: 600px;
+      span {
+        color: $orange-color;
+      }
+    }
+    .input {
+      position: relative;
+      i {
+        padding: 10px 15px;
+        border-radius: 50%;
+        background-color: #ffead5;
+        color: $orange-color;
+        font-size: 20px;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+      }
+      input {
+        width: 500px;
+        padding: 15px 30px;
+        border-radius: 20px;
+        border: 1px solid #E4E7EC;
+        background-color: transparent;
+        outline: none;
+
+        &::placeholder {
+          padding-left: 50px;
+          color: #000;
+        }
+      }
+      button {
+        @extend %primary-btn;
+        padding: 10px 25px;
+        position: absolute;
+        top: 4px;
+        right: 10px;
+      }
+    }
+    .texts {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      h3 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+}

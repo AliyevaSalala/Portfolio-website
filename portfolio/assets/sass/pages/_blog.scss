@@ -1,0 +1,104 @@
+#marquee {
+  background-color: #fb6514;
+  padding: 2rem 0;
+  border-radius: 20px;
+
+  .marque-sec {
+    background-color: $white-color;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    transform: rotate(-3deg);
+  }
+}
+
+#blog-sec {
+  padding: 2rem 0;
+
+  .blog-section {
+    .blog-intro {
+      @include flexbox();
+      padding: 20px 0;
+      h1 {
+        font-size: 40px;
+        color: $blue-color;
+      }
+      button {
+        @extend %primary-btn;
+        padding: 10px 20px;
+
+        &:hover {
+          box-shadow: inset 6em 0 0 0 #fff;
+          color: $orange-color;
+        }
+      }
+    }
+    .blog-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      .blog-card {
+        .blog-image {
+          position: relative;
+          img {
+            width: 100%;
+          }
+          a {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            padding: 25px 35px;
+            background-color: #1d2939;
+            border-radius: 50%;
+            i {
+              color: $white-color;
+              cursor: pointer;
+              font-size: 35px;
+              transform: rotate(40deg);
+            }
+          }
+        }
+        .blog-body {
+          padding-top: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          button {
+            @extend %primary-btn;
+            background-color: #f2f4f7;
+            color: #000;
+            width: 200px;
+          }
+          .day {
+            display: flex;
+            gap: 20px;
+            a {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              color: #344054;
+              span {
+                &::before {
+                  content: "";
+                  display: block;
+                  width: 10px;
+                  height: 10px;
+                  background-color: $orange-color;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
+          p {
+            color: #344054;
+            font-size: 20px;
+            width: 100%;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
