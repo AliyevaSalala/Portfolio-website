@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 footer .footer .footer-top button, #blog-sec .blog-section .blog-cards .blog-card .blog-body button, #blog-sec .blog-section .blog-intro button, #project-sec .project .input button, #portfolio-sec .portfolio-sec .intro .portfolio-btn button, #portfolio-sec .portfolio-sec .info button, #hire-me-sec .hire-me-sec .sec-left button, #hero-banner-sec .hero-banner-section .banner-intro .banner-img .portfolio-btn button {
   color: #fff;
   background-color: #fd853a;
@@ -28,6 +32,9 @@ footer .footer .footer-top button, #blog-sec .blog-section .blog-cards .blog-car
   transition: all 0.6s;
 }
 
+header {
+  transition: all 0.6s;
+}
 header .header {
   margin-top: 30px;
   padding: 6px 25px 6px 8px;
@@ -59,6 +66,11 @@ header .header nav ul li a.logo {
 }
 header .header nav ul li a img {
   width: 50px;
+}
+header.header-scroll {
+  position: fixed;
+  width: 100%;
+  z-index: 111111;
 }
 
 #hero-banner-sec {
@@ -106,6 +118,11 @@ header .header nav ul li a img {
   justify-content: space-between;
   align-items: center;
   gap: 200px;
+}
+@media screen and (max-width: 1024px) {
+  #hero-banner-sec .hero-banner-section .banner-intro {
+    flex-direction: column;
+  }
 }
 #hero-banner-sec .hero-banner-section .banner-intro .info {
   padding-right: 300px;
@@ -190,6 +207,7 @@ header .header nav ul li a img {
 }
 #services .services-sec .services-top h1 {
   font-size: 40px;
+  color: #fff;
 }
 #services .services-sec .services-top h1 span {
   color: #fd853a;
@@ -198,6 +216,7 @@ header .header nav ul li a img {
   max-width: 500px;
   font-size: 15px;
   line-height: 20px;
+  color: #fff;
 }
 #services .services-sec .services-bottom {
   padding-top: 50px;
@@ -221,6 +240,11 @@ header .header nav ul li a img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  #experince-sec .experince-sec .intro {
+    flex-direction: column;
+  }
 }
 #experince-sec .experince-sec .intro .texts {
   display: flex;
@@ -259,6 +283,11 @@ header .header nav ul li a img {
   max-width: 300px;
   line-height: 20px;
 }
+@media screen and (max-width: 1024px) {
+  #experince-sec .experince-sec .intro .image {
+    transform: rotate(90deg);
+  }
+}
 #experince-sec .experince-sec .intro .image img {
   width: 50px;
 }
@@ -271,8 +300,18 @@ header .header nav ul li a img {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  #hire-me-sec .hire-me-sec {
+    flex-direction: column;
+  }
+}
 #hire-me-sec .hire-me-sec .sec-right {
   width: 50%;
+}
+@media screen and (max-width: 1024px) {
+  #hire-me-sec .hire-me-sec .sec-right {
+    width: 80%;
+  }
 }
 #hire-me-sec .hire-me-sec .sec-right img {
   width: 100%;
@@ -284,6 +323,12 @@ header .header nav ul li a img {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  #hire-me-sec .hire-me-sec .sec-left {
+    width: 100%;
+    align-items: center;
+  }
 }
 #hire-me-sec .hire-me-sec .sec-left h1 {
   font-size: 45px;
@@ -327,6 +372,11 @@ header .header nav ul li a img {
   align-items: center;
   padding: 30px 0;
 }
+@media screen and (max-width: 767px) {
+  #portfolio-sec .portfolio-sec .info {
+    flex-direction: column;
+  }
+}
 #portfolio-sec .portfolio-sec .info h1 {
   font-size: 45px;
   color: #344054;
@@ -346,6 +396,11 @@ header .header nav ul li a img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+@media screen and (max-width: 1024px) {
+  #portfolio-sec .portfolio-sec .intro .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 #portfolio-sec .portfolio-sec .intro .cards .card img {
   width: 100%;
@@ -381,9 +436,19 @@ header .header nav ul li a img {
   align-items: center;
   gap: 30px;
 }
+@media screen and (max-width: 1024px) {
+  #portfolio-sec .portfolio-sec .intro .portfolio-btn {
+    flex-direction: column;
+  }
+}
 #portfolio-sec .portfolio-sec .intro .portfolio-btn button {
   background-color: #f2f4f7;
   color: #000;
+}
+@media screen and (max-width: 1024px) {
+  #portfolio-sec .portfolio-sec .intro .portfolio-btn button {
+    width: 100%;
+  }
 }
 #portfolio-sec .portfolio-sec .intro .portfolio-texts {
   padding-top: 50px;
@@ -419,7 +484,10 @@ header .header nav ul li a img {
 
 #testimonials-sec {
   padding: 3rem 0;
-  background-color: #000;
+  background-image: url("../images/Frame 77.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #testimonials-sec .testimonials-sec .info {
   display: flex;
@@ -450,15 +518,21 @@ header .header nav ul li a img {
   color: #fff;
   font-size: 15px;
 }
+#testimonials-sec .testimonials-sec .carousel {
+  padding-top: 50px;
+  padding-left: 200px;
+}
 #testimonials-sec .testimonials-sec .carousel .carousel-wrap .content {
+  width: 800px;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  padding: 50px 100px;
+  -webkit-backdrop-filter: invert(20%);
+          backdrop-filter: invert(20%);
+  border-radius: 20px;
+  padding: 50px;
 }
 #testimonials-sec .testimonials-sec .carousel .carousel-wrap .content .image {
   display: flex;
@@ -470,16 +544,26 @@ header .header nav ul li a img {
 }
 #testimonials-sec .testimonials-sec .carousel .carousel-wrap .content .image .body h3 {
   color: #fff;
+  padding-bottom: 5px;
+  font-size: 25px;
 }
 #testimonials-sec .testimonials-sec .carousel .carousel-wrap .content .image .body p {
   color: #fff;
+  font-size: 15px;
+  font-weight: 400;
 }
 #testimonials-sec .testimonials-sec .carousel .carousel-wrap .content .icons {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 #testimonials-sec .testimonials-sec .carousel .carousel-wrap .content .icons i {
   color: #fd853a;
+  font-size: 24px;
+}
+#testimonials-sec .testimonials-sec .carousel .carousel-wrap .content .icons p {
+  font-size: 24px;
+  font-weight: bold;
 }
 #testimonials-sec .testimonials-sec .carousel .carousel-wrap .content p {
   color: #fff;
@@ -493,7 +577,7 @@ header .header nav ul li a img {
   right: 10px;
 }
 #testimonials-sec .testimonials-sec .carousel .carousel-wrap .content .vector-svg img {
-  width: 150px;
+  width: 100px;
 }
 
 #project-sec {
@@ -567,14 +651,27 @@ header .header nav ul li a img {
   background-color: #fb6514;
   padding: 2rem 0;
   border-radius: 20px;
+  padding-left: 20px;
 }
 #marquee .marque-sec {
   background-color: #fff;
-  padding: 15px;
+  padding: 5px 0;
   border-radius: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
   transform: rotate(-3deg);
+  width: 99%;
+}
+#marquee .marque-sec h3 {
+  font-size: 30px;
+  display: flex;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+#marquee .marque-sec h3 i {
+  color: #fd853a;
 }
 
 #blog-sec {
@@ -601,6 +698,16 @@ header .header nav ul li a img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  #blog-sec .blog-section .blog-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  #blog-sec .blog-section .blog-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 #blog-sec .blog-section .blog-cards .blog-card .blog-image {
   position: relative;

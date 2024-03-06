@@ -17,7 +17,7 @@
       @include flexbox();
       h1 {
         font-size: 40px;
-        //   color: $white-color;
+        color: $white-color;
         span {
           color: $orange-color;
         }
@@ -26,7 +26,7 @@
         max-width: 500px;
         font-size: 15px;
         line-height: 20px;
-        //   color: $white-color;
+        color: $white-color;
       }
     }
     .services-bottom {

@@ -2,14 +2,26 @@
   background-color: #fb6514;
   padding: 2rem 0;
   border-radius: 20px;
+  padding-left: 20px;
 
   .marque-sec {
     background-color: $white-color;
-    padding: 15px;
+    padding: 5px 0;
     border-radius: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 60px;
     transform: rotate(-3deg);
+    width: 99%;
+    h3 {
+      font-size: 30px;
+
+      i {
+        color: $orange-color;
+      }
+      display: flex;
+      column-gap: 35px;
+    }
   }
 }
 
@@ -38,6 +50,12 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
+      @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
       .blog-card {
         .blog-image {
           position: relative;

@@ -2,7 +2,7 @@
 $(".carousel-wrap-2").owlCarousel({
   loop: true,
   margin: 10,
-  nav: true,
+  nav: false,
   navText: [
     "<i class='fa fa-caret-left'></i>",
     "<i class='fa fa-caret-right'></i>",
@@ -53,6 +53,7 @@ $(function () {
 const BASE_URL = "http://localhost:8080";
 const blogSection = document.querySelector(".blog-cards");
 const seeAllBtn = document.querySelector(".see-all-btn");
+const header = document.querySelector("header");
 
 let array = [];
 let limit = 3;
@@ -96,4 +97,8 @@ seeAllBtn.addEventListener("click", function () {
   if (limit > array.length) {
     this.remove();
   }
+});
+
+window.addEventListener("scroll", function () {
+  header.classList.toggle("header-scroll", window.scrollY > 0);
 });

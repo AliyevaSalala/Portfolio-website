@@ -4,6 +4,9 @@
     .info {
       @include flexbox();
       padding: 30px 0;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
       h1 {
         font-size: 45px;
         color: $blue-color;
@@ -24,6 +27,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+
+        @media screen and (max-width: 1024px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
         .card {
           img {
             width: 100%;
@@ -62,10 +69,16 @@
         padding-top: 30px;
         @include flexbox(center);
         gap: 30px;
+        @media screen and (max-width: 1024px) {
+          flex-direction: column;
+        }
         button {
           @extend %primary-btn;
           background-color: #f2f4f7;
           color: #000;
+          @media screen and (max-width: 1024px) {
+            width: 100%;
+          }
         }
       }
       .portfolio-texts {

@@ -14,10 +14,15 @@
     .intro {
       padding-top: 30px;
       @include flexbox();
+
+      @media screen and (max-width: 1024px) {
+        flex-direction: column;
+      }
       .texts {
         display: flex;
         flex-direction: column;
         gap: 50px;
+
         .text {
           padding-left: 60px;
           display: flex;
@@ -52,6 +57,9 @@
         }
       }
       .image {
+        @media screen and (max-width: 1024px) {
+          transform: rotate(90deg);
+        }
         img {
           width: 50px;
         }
